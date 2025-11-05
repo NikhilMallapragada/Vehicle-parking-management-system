@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Add Vehicle</title></head>
+<body>
+<h2>Add Vehicle</h2>
+<form th:action="@{/vehicles/save}" th:object="${vehicle}" method="post">
+    Vehicle Number: <input type="text" th:field="*{vehicleNumber}" /><br/>
+    Owner Name: <input type="text" th:field="*{ownerName}" /><br/>
+    Vehicle Type: <input type="text" th:field="*{vehicleType}" /><br/>
+    <button type="submit">Save</button>
+</form>
+</body>
+</html>

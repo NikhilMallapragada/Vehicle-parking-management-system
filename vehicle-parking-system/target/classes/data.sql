@@ -1,0 +1,10 @@
+INSERT INTO parking_slot(slot_number, status, vehicle_number) VALUES ('S1', 'AVAILABLE', NULL);
+INSERT INTO parking_slot(slot_number, status, vehicle_number) VALUES ('S2', 'AVAILABLE', NULL);
+INSERT INTO parking_slot(slot_number, status, vehicle_number) VALUES ('S3', 'AVAILABLE', NULL);
+INSERT INTO parking_slot(slot_number, status, vehicle_number) VALUES ('S4', 'AVAILABLE', NULL);
+INSERT INTO parking_slot(slot_number, status, vehicle_number) VALUES ('S5', 'AVAILABLE', NULL);
+INSERT INTO parking_slot(slot_number, status, vehicle_number) VALUES ('S6', 'AVAILABLE', NULL);
+INSERT INTO parking_slot(slot_number, status, vehicle_number) VALUES ('S7', 'AVAILABLE', NULL);
+INSERT INTO parking_slot(slot_number, status, vehicle_number) VALUES ('S8', 'AVAILABLE', NULL);
+INSERT INTO parking_slot(slot_number, status, vehicle_number) VALUES ('S9', 'AVAILABLE', NULL);
+INSERT INTO parking_slot(slot_number, status, vehicle_number) VALUES ('S10', 'AVAILABLE', NULL);

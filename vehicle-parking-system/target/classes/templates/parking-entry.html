@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Parking Entry</title></head>
+<body>
+<h2>Park Vehicle</h2>
+<form action="/parking/entry" method="post">
+    Vehicle Number: <input type="text" name="vehicleNumber" />
+    <button type="submit">Park</button>
+</form>
+<div th:if="${txn != null}">
+    <h3>Vehicle Parked Successfully</h3>
+    <p>Slot: <span th:text="${txn.slot.slotNumber}"></span></p>
+    <p>Entry Time: <span th:text="${txn.entryTime}"></span></p>
+</div>
+</body>
+</html>

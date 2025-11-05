@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Exit Success</title>
+</head>
+<body>
+    <h2>Vehicle Exited Successfully!</h2>
+    <p>Vehicle Number: <span th:text="${transaction.vehicleNumber}"></span></p>
+    <p>Slot: <span th:text="${transaction.slot.id}"></span></p>
+    <p>Exit Time: <span th:text="${transaction.exitTime}"></span></p>
+    <p>Fee: <span th:text="${transaction.fee}"></span></p>
+</body>
+</html>

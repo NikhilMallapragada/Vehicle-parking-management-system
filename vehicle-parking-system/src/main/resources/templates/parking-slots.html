@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Parking Slots</title></head>
+<body>
+<h2>Parking Slots</h2>
+<table border="1">
+    <tr><th>ID</th><th>Slot Number</th><th>Status</th><th>Vehicle</th></tr>
+    <tr th:each="s : ${slots}">
+        <td th:text="${s.slotId}"></td>
+        <td th:text="${s.slotNumber}"></td>
+        <td th:text="${s.status}"></td>
+        <td th:text="${s.vehicleNumber}"></td>
+    </tr>
+</table>
+</body>
+</html>

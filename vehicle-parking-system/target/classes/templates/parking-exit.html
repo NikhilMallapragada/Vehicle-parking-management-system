@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head><title>Parking Exit</title></head>
+<body>
+<h2>Exit Vehicle</h2>
+<form action="/parking/exit" method="post">
+    Vehicle Number: <input type="text" name="vehicleNumber" />
+    <button type="submit">Exit</button>
+</form>
+<div th:if="${txn != null}">
+    <h3>Vehicle Exited</h3>
+    <p>Slot: <span th:text="${txn.slot.slotNumber}"></span></p>
+    <p>Exit Time: <span th:text="${txn.exitTime}"></span></p>
+    <p>Amount: ₹<span th:text="${txn.amount}"></span></p>
+</div>
+</body>
+</html>

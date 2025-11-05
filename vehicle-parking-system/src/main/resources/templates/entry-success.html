@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Entry Success</title>
+</head>
+<body>
+    <h2>Vehicle Parked Successfully!</h2>
+    <p>Vehicle Number: <span th:text="${transaction.vehicleNumber}"></span></p>
+    <p>Slot: <span th:text="${transaction.slot.id}"></span></p>
+    <p>Entry Time: <span th:text="${transaction.entryTime}"></span></p>
+</body>
+</html>
